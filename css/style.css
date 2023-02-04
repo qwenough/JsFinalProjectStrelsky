@@ -45,16 +45,24 @@ input {
   box-shadow: 1px 1px 1px 1px rgba(255, 145, 0, 0.589);
 }
 
+.header-container {
+  background-color: #000000f1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .wrapper-header {
   width: 90%;
   margin: 0 auto;
+  left: 5%;
 }
 
 header {
   height: 100px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 header .logo a {
@@ -102,7 +110,7 @@ header .menu ul li a {
   padding-top: 10px;
 }
 
-header #contact-button {
+header .contact-button {
   background-color: #DC7000;
   font-size: 13px;
   border-radius: 6px;
@@ -126,7 +134,7 @@ header a {
 }
 
 .thumbnail {
-  margin-top: 90px;
+  padding-top: 120px;
   display: flex;
   gap: 6%;;
 }
@@ -159,7 +167,7 @@ header a {
   right: 0;
   top: 0;
   width: 38%;
-  max-width: 650px;
+  max-width: 600px;
   z-index: -1;
 }
 
@@ -297,6 +305,7 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
 }
 
 .email {
@@ -345,7 +354,7 @@ hr {
 /* About us */
 
 .about-thumbnail-container {
-  padding: 140px 0;
+  padding: 270px 0;
   width: 50%;
 }
 
@@ -433,6 +442,7 @@ hr {
 }
 
 .portfolio-thumbnail {
+  padding-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center
@@ -455,6 +465,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
 }
 
 .portfolio-thumbnail-div:not(:last-child) {
@@ -495,15 +506,67 @@ hr {
 .portfolio-comment-container {
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
+  overflow: hidden;
+  gap: 30px;
+}
+
+.portfolio-comment-div {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  gap: 350px;
+  justify-content: space-between;
+  left: 0;
+  transition: all ease-in-out 1s;
+
 }
 
 .portfolio-comment {
   border: #fff 2px solid;
   border-radius: 10px;
-  width: 200px;
+  width: 400px;
+  height: 250px;
   padding: 20px;
+  box-sizing: border-box;
 }
+
+.comment-name {
+  font-weight: 600;
+}
+
+.comment-email {
+  font-weight: 200;
+  font-size: small;
+  color: #a1a1a1;
+  margin: 2px 0 12px 0;
+}
+
+.comment-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.comment-button {
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px solid #DC7000;
+  height: 21px;
+  cursor: pointer;
+}
+
+.comment-button:hover {
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.prev-button img {
+  transform: rotate(180deg);
+}
+
+/* .comment-button-active {
+
+} */
 
 .modal {
   display: none;
@@ -589,18 +652,25 @@ form {
 }
 
 .call-back {
-  /* display: none; */
-  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  margin: 15px 25% 0 25%;
   top: 0;
-  width: 90px;
-  height: 100px;
-  background-color: #e0e0e0;
+  width: 50%;
+  height: 60px;
+  background-color: #e0e0e0f5;
   animation-name: notification;
   animation-duration: 3s;
+  z-index: 3;
+  border-radius: 20px;
 }
 
 .call-back p {
   color: #010101;
+  font-weight: 400;
+  font-size: 25px;
 }
 
 @keyframes notification {
@@ -619,4 +689,45 @@ form {
   100% {
     opacity: 0
   }
+}
+
+.display-burger {
+  display: block !important;
+}
+
+.burger-icon {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  z-index: 2;
+}
+
+.burger-icon img {
+  width: 50px;
+}
+
+.burger {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.918);
+  width: 800px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 0 0 0 15px;
+}
+
+.burger ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.contact-button {
+  cursor: pointer;
 }
