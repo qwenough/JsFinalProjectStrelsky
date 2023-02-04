@@ -84,6 +84,7 @@
 
   .portfolio-benefits-text .check-div {
     margin-top: 0;
+    align-items:center;
   }
 
   .check-container {
@@ -183,5 +184,306 @@
 
   main .example .wrapper {
     background-image: none;
+  }
+
+  .example .example-container {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .team .team-container {
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+
+  main .team {
+    padding: 40px 0;
+  }
+
+  .portfolio-example {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-example .portfolio-example-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .portfolio-example-img img {
+    display: none;
+  }
+
+  .wrapper .portfolio-benefits {
+    padding: 40px 0 80px 0;
+  }
+
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-container .footer-about {
+    width: 100%;
+  }
+
+  .footer-container .footer-about ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 600;
+  }
+
+  .footer-head {
+    display: none;
+  }
+
+  footer hr {
+    margin: 10px auto;
+  }
+
+  footer .footer-copyright {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width:425px) {
+
+  body .burger {
+    width: 100%;
+  }
+
+  .thumbnail .thumbnail-text h1 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+
+  main .round-button {
+    padding: 5px 10px;
+    margin-top: 20px;
+  }
+
+  .trend-games .trend-games-imgs {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  main .trend-games h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .div-trend-game img {
+    width: 100px;
+  }
+
+  .trend-games-imgs .div-trend-game p {
+    font-size: 18px;
+  }
+
+  main .big-picture-container h1 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .platforms .platforms-container {
+    gap: 5px;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+
+  main .platforms-bg {
+    padding: 30px 0;
+  }
+
+  .platforms h1 {
+    font-size: 24px;
+  }
+
+  .recent-gallery img {
+    width: 45%;
+    height: 50%;
+  }
+
+  main .recent-bg {
+    padding: 30px 0;
+  }
+
+  .wrapper .stay-in-loop {
+    padding: 10px;
+  }
+
+  .wrapper .about-thumbnail-container h1 {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+
+  .wrapper .about-thumbnail-container {
+    padding: 20px 0;
+  }
+
+  .wrapper .thumbnail {
+    padding-top: 20px;
+  }
+
+  main .why-work h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .why-work-container .why-work-div {
+    box-sizing: border-box;
+  }
+
+  .wrapper .example-container h1 {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+
+  .team .team-container {
+    gap: 10px;
+  }
+
+  .team-container .team-div {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  main .wrapper .portfolio-thumbnail {
+    padding-top: 20px;
+  }
+
+  .portfolio-thumbnail .portfolio-thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  main .portfolio-thumbnail-container .portfolio-thumbnail-div {
+    border-right: 0;
+  }
+
+  .wrapper .portfolio-thumbnail h1 {
+    font-size: 24px;
+  } 
+
+  .portfolio-benefits-img img {
+    width: 100%;
+  }
+
+  main .square-button {
+    padding: 5px 10px;
+  }
+
+  .wrapper .portfolio-example {
+    padding-bottom: 40px;
+  }
+
+  .portfolio-example .portfolio-example-text p {
+    padding: 10px 0;
+  }
+
+  .portfolio-comment-container h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .portfolio-comment-div .portfolio-comment {
+    padding: 10px;
+    height: auto;
+  }
+
+  .comment-buttons .comment-button {
+    padding: 5px;
+  }
+
+  .wrapper .portfolio-comment-container {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .wrapper .email-text > p {
+    margin: 0 0 15px 0;
+  }
+
+  .email .wrapper h1 {
+    font-size: 24px;
+  }
+
+  .recent h1 {
+    font-size: 24px;
+  }
+
+  main .team h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:375px) {
+  .platforms .platforms-container {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .platforms-container .platforms-div {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    
+  }
+
+  .platforms-div img {
+    width: 50px;
+  }
+
+  .platforms-div .arrow {
+    display: none;
+  }
+
+  .stay-in-loop .continue {
+    display: none;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .team-container .team-div {
+    width: 115px;
+    padding: 5px;
+  }
+
+  .team-container .team-div img {
+    width: 80%;
+  }
+
+  .wrapper ,.email-text {
+    text-align: center;
+  }
+
+  .wrapper .stay-in-loop {
+    text-align: center;
+  }
+
+  .portfolio-thumbnail .portfolio-thumbnail-container {
+    width: 100%;
+  }
+
+  .check-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .modal .modal-content {
+    width: 95%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .modal-content .submit-button {
+    margin-top: 20px;
   }
 }
