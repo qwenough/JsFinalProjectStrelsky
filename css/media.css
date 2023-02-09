@@ -25,6 +25,11 @@
   main .why-work {
     padding-top: 0;
   }
+
+  body .news {
+    width: 70%;
+    margin-left: 15%;
+  }
 }
 
 @media (max-width:1280px) {
@@ -36,6 +41,11 @@
 
   main .about-thumbnail {
     background-size: 600px;
+  }
+
+  body .news {
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
@@ -121,6 +131,11 @@
 
   .wrapper .portfolio-thumbnail {
     padding-top: 40px;
+  }
+
+  body .news {
+    width: 98%;
+    margin-left: 1%;
   }
 }
 
@@ -246,6 +261,11 @@
   footer .footer-copyright {
     padding-bottom: 10px;
   }
+
+  body .call-back p,
+  body .news p{
+    font-size: 20px;
+  }
 }
 
 @media (max-width:425px) {
@@ -282,7 +302,7 @@
     font-size: 18px;
   }
 
-  main .big-picture-container h1 {
+  main .big-picture-container h2 {
     font-size: 24px;
     width: 100%;
   }
@@ -297,7 +317,7 @@
     padding: 30px 0;
   }
 
-  .platforms h1 {
+  .platforms h2 {
     font-size: 24px;
   }
 
@@ -419,6 +439,13 @@
     font-size: 24px;
     margin-bottom: 10px;
   }
+ 
+  body .call-back,
+  body .news{
+    margin-top: 5px;
+    width: 94%;
+    margin-left: 2%;
+  }
 }
 
 @media (max-width:375px) {
@@ -432,7 +459,6 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     width: 100%;
-    
   }
 
   .platforms-div img {
@@ -443,8 +469,8 @@
     display: none;
   }
 
-  .stay-in-loop .continue {
-    display: none;
+  .stay-in-loop-email input {
+    width: 130px;
   }
 
   .footer-logo {
@@ -486,4 +512,17 @@
   .modal-content .submit-button {
     margin-top: 20px;
   }
+
+  body .call-back p,
+  body .news p{
+    font-size: 16px;
+  }
+
+  body .call-back,
+  body .news{
+    width: 94%;
+    margin-left: 1%;
+    height: 40px;
+  }
+
 }

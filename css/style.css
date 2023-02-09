@@ -224,7 +224,7 @@ header a {
   background: linear-gradient(0deg, rgba(27, 27, 27, 1) 0%, rgba(1, 1, 1, 1) 100%);
 }
 
-.big-picture-container h1 {
+.big-picture-container h2 {
   width: 70%;
   text-align: center;
 }
@@ -258,6 +258,10 @@ header a {
   margin-top: 45px;
 }
 
+.platforms h2 {
+  margin-bottom: 10px;
+}
+
 .recent-bg {
   padding: 100px 0;
   text-align: center;
@@ -285,13 +289,18 @@ header a {
   width: 40%;
   max-width: 500px;
   height: 45px;
-  padding: 5px 5px 5px 15px;
+  padding: 5px;
   box-sizing: border-box;
   background-color: #fff;
   color: #010101;
   display: grid;
   grid-template-columns: 2fr 1fr;
   border-radius: 8px;
+  gap: 3px;
+}
+
+.stay-in-loop-email input {
+  padding-left: 10px;
 }
 
 .stay-in-loop-email p {
@@ -383,8 +392,8 @@ hr {
   gap: 20px;
 }
 
-.why-work h1,
-.team h1 {
+.why-work h2,
+.team h2 {
   margin-bottom: 40px;
 }
 
@@ -425,8 +434,9 @@ hr {
   width: 50%;
 }
 
-.example-container h1 {
+.example-container h2 {
   padding: 40px 0;
+  font-size: 24px;
 }
 
 .example .wrapper {
@@ -578,7 +588,7 @@ hr {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-content h1 {
+.modal-content h2 {
   color: #010101;
 }
 
@@ -623,6 +633,11 @@ form {
   background-color: rgba(161, 78, 78, 0.404)!important;
 }
 
+.wrong-email {
+  background-color: rgba(161, 78, 78, 0.404) !important;
+  border-radius: 10px;
+}
+
 .submit-button {
   width: 60%;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.589);
@@ -651,7 +666,8 @@ form {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.493);
 }
 
-.call-back {
+.call-back,
+.news {
   display: none;
   align-items: center;
   justify-content: center;
@@ -665,9 +681,12 @@ form {
   animation-duration: 3s;
   z-index: 3;
   border-radius: 20px;
+  padding: 5px;
+  text-align: center;
 }
 
-.call-back p {
+.call-back p,
+.news p {
   color: #010101;
   font-weight: 400;
   font-size: 25px;
