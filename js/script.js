@@ -54,12 +54,19 @@ let forms = document.forms[0];
 for (let i = 0; i < contactButton.length; i++) {
   contactButton[i].onclick = function () {
     modal.style.display = "block";
-    if (document.cookie !== "") {
+    if (checkCookie("name") && checkCookie("surname") && checkCookie("email") && checkCookie("phone")) {
       for (let i = 0; i < forms.length; i++) {
         forms[i].value = document.cookie.split(";")[i].trim().split("=")[1];
       }
     }
   }
+}
+
+function checkCookie(name) {
+  var matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? matches[1] : undefined;
 }
 
 closeModal.onclick = function () {
