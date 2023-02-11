@@ -63,7 +63,7 @@ for (let i = 0; i < contactButton.length; i++) {
 }
 
 function checkCookie(name) {
-  var matches = document.cookie.match(new RegExp(
+  let matches = document.cookie.match(new RegExp(
     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
   ));
   return matches ? matches[1] : undefined;
@@ -187,30 +187,30 @@ function makeSlider() {
 
   let offset = 0;
   document.querySelector(".next-button").addEventListener("click", function () {
-    CalcSliderGap();
+    сalcSliderGap();
     offset += commentWidth + gap;
     if (offset > (commentWidth + gap) * 3) {
       offset = 0;
     }
-    CalcSliderOffset();
+    сalcSliderOffset();
   });
 
   document.querySelector(".prev-button").addEventListener("click", function () {
-    CalcSliderGap();
+    сalcSliderGap();
     offset -= commentWidth + gap;
     if (offset < 0) {
       offset = (commentWidth + gap) * 3;
     }
-    CalcSliderOffset();
+    сalcSliderOffset();
   });
 
-  function CalcSliderGap() {
+  function сalcSliderGap() {
     gap = comments[1].offsetLeft - comments[0].offsetLeft - comments[0].offsetWidth;
     commentWidth = comments[0].offsetWidth;
     return { gap, commentWidth };
   }
 
-  function CalcSliderOffset() {
+  function сalcSliderOffset() {
     document.querySelector(".portfolio-comment-div").style.left = - offset + "px";
   }
 }
