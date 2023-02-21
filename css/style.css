@@ -393,7 +393,10 @@ hr {
   gap: 20px;
 }
 
-.why-work h2,
+.why-work h2 {
+  margin-bottom: 10px;
+}
+
 .team h2 {
   margin-bottom: 40px;
 }
